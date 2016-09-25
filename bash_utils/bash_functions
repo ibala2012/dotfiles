@@ -28,10 +28,48 @@ function mkcdr {
 
 # get most used commands in bash
 top_commands () {
-history|awk '{print $2}'|sort|uniq -c|sort -rn|head -20|awk '!max{max=$1;}{r="";i=s=60*$1/max;while(i-->0)r=r"#";printf "%15s %5d %s %s",$2,$1,r,"\n";}'
+    history|awk '{print $2}'|sort|uniq -c|sort -rn|head -20|awk '!max{max=$1;}{r="";i=s=60*$1/max;while(i-->0)r=r"#";printf "%15s %5d %s %s",$2,$1,r,"\n";}'
 }
 
 # shortcuts for tar quickly
 mktar() { tar cvf  "${1%%/}.tar"     "${1%%/}/"; }
 mktgz() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
 mktbz() { tar cvjf "${1%%/}.tar.bz2" "${1%%/}/"; }
+
+# copy and goto directory
+cpg (){
+  	if [ -d "$2" ];then
+  	  	cp $1 $2 && cd $2
+  	else
+  	  	cp $1 $2
+  	fi
+}
+
+#move and go to dir
+mvg (){
+  	if [ -d "$2" ];then
+    	mv $1 $2 && cd $2
+  	else
+   		mv $1 $2
+  	fi
+}
+
+# a very low level quick note taking bash function
+note ()
+{
+        #if file doesn't exist, create it
+        [ -f $HOME/.notes ] || touch $HOME/.notes
+
+        #no arguments, print file
+        if [ $# = 0 ]
+        then
+                cat $HOME/.notes
+        #clear file
+        elif [ $1 = -c ]
+        then
+                > $HOME/.notes
+        #add all arguments to file
+        else
+                echo "$@" >> $HOME/.notes
+        fi
+}
