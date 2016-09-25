@@ -1,4 +1,4 @@
-# dotgdb
+# dotgdb files
 
 This project was based on [Gdbinit](https://github.com/gdbinit/Gdbinit) by
 [fG!](http://reverse.put.as/) which in turn is based on work by the following
@@ -20,6 +20,7 @@ Currently there is support for the following architectures:
  * x86-64
  * arm
  * mips
+
 
 
 ## How do I install it?

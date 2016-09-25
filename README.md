@@ -38,7 +38,7 @@ My dotfiles for:
 * weechat
 * misc. useful & not-so-useful scripts
 * gdb setup for C++
-## Installation
+# Installation
 	git clone https://github.com/ibala2012/dotfiles.git
 	cd dotfiles
 	./dots.sh
