@@ -13,9 +13,15 @@ I will try to update these files as and when I change something.
 Special thanks to okubax for maintaining a nice folder structure for me to borrow.
 
 I still prefer bash over zsh :D, so I have bashrc listed.
-I also would request people to download relevant packages as needed.
 
 Special thanks to all different developers for helping me create a nice setup.
+
+## Credits to various Groups and Members
+
+The GDB setup is borrowed from following Members:
+[Gdbinit](https://github.com/gdbinit/Gdbinit) [fG!](http://reverse.put.as/)
+[skyscribe stl support](https://github.com/gdbinit/Gdbinit)
+[dholm] (https://github.com/dholm/dotgdb)
 
 # ibala's dotfiles
 My dotfiles for:
@@ -30,7 +36,7 @@ My dotfiles for:
 * vim
 * weechat
 * misc. useful & not-so-useful scripts
-
+* gdb setup for C++
 ## Installation
 	git clone https://github.com/ibala2012/dotfiles.git
 	cd dotfiles
