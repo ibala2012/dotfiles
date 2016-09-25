@@ -20,9 +20,14 @@ export EDITOR="vim"
 export BROWSER="chromium"
 export TODO_DIR="/home/biyer/Documents/todo/"
 export ALTERNATE_EDITOR=""
+export DOT_DIR="$(dirname $(readlink -f ~/bin))"
 #source bash aliases if the file is there
 if [ -f ~/.bash_utils/bash_aliases ]; then
     source ~/.bash_utils/bash_aliases
+fi
+#source bash functions if the file is there
+if [ -f ~/.bash_utils/bash_functions ]; then
+    source ~/.bash_utils/bash_functions
 fi
 
 eval `dircolors ~/.dir_colors`
