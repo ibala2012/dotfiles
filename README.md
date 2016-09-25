@@ -1,7 +1,9 @@
 Original Author credit as listed below
-## Original Screenshot
+## Original Screenshot of okubax
 ![ScreenShot](https://raw.githubusercontent.com/okubax/dotfiles-old/master/screenshot.png)
 
+## Screenshot of the view I use :P
+![Screenshot](https://raw.githubusercontent.com/ibala2012/dotfiles/master/modified_scr.png)
 I have mostly cloned okubax original old dot files, I have modified
 very few things to suit my needs with some minor changes to in terms of my utility.
 I have also modified the vim set of things to reflect my liking by adding some
