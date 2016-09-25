@@ -13,13 +13,13 @@ Xft.hintstyle: hintfull
 
 ! Colors
 !----------------------------------------------------------------------
-!#include "/home/biyer/.colors/jellybeans"
-!#include "/home/biyer/.colors/hybrid"
-!#include "/home/biyer/.colors/base16-solarized.light"
-!#include "/home/biyer/.colors/hybrid_e7"
-#include "/home/biyer/.colors/hund"
-!#include "/home/biyer/.colors/s3r0"
-!#include "/home/biyer/.colors/nix_e7"
+!#include /home/biyer/.colors/jellybeans
+!#include /home/biyer/.colors/hybrid
+!#include /home/biyer/.colors/base16-solarized.light
+!#include /home/biyer/.colors/hybrid_e7
+#include /home/biyer/.colors/hund
+!#include /home/biyer/.colors/s3r0
+!#include /home/biyer/.colors/nix_e7
 
 ! URXVT
 !----------------------------------------------------------------------
@@ -34,8 +34,8 @@ URxvt.borderless: false
 URxvt.internalBorder: 3
 URxvt.externalBorder: 3
 URxvt.scrollBar: false
-URxvt.font: xft:Tewi:pixelsize=12:antialias=true
-URxvt.boldFont: xft:Tewi:pixelsize=12:antialias=true
+!URxvt.font: xft:Tewi:pixelsize=12:antialias=true
+!URxvt.boldFont: xft:Tewi:pixelsize=12:antialias=true
 
 ! clickable urls
 URxvt.perl-ext-common: default,matcher,selection-to-clipboard

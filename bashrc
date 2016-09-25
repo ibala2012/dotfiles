@@ -30,6 +30,11 @@ if [ -f ~/.bash_utils/bash_functions ]; then
     source ~/.bash_utils/bash_functions
 fi
 
-eval `dircolors ~/.dir_colors`
+# starting ssh-agent if not started already
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+fi
+
+#eval `dircolors ~/.dir_colors`
 
 neofetch

@@ -102,3 +102,6 @@ ln -sfn ${BASEDIR}/wl $HOME/.wl
 
 # ascii art folder
 ln -sfn ${BASEDIR}/ascii_art ${HOME}/.ascii_art
+
+# symlinking xdefaults for correct fonts
+ln -sfn ${BASEDIR}/Xdefaults ${HOME}/.Xdefaults

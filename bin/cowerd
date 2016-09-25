@@ -1,7 +1,7 @@
 #!/bin/sh
 # install AUR packages with cower
 
-cd $HOME/downloads/aur && cower -d "$1"
+cd $HOME/Downloads/aur && cower -d "$1"
 builddir="$_"
 cd "$builddir" && ${EDITOR:-vi} PKGBUILD
 
