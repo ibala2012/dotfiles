@@ -35,6 +35,6 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval `ssh-agent -s`
 fi
 
-#eval `dircolors ~/.dir_colors`
+eval `dircolors ~/.dir_colors`
 
 neofetch
