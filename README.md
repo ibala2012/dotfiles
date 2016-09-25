@@ -42,5 +42,6 @@ My dotfiles for:
 # Installation
 	git clone https://github.com/ibala2012/dotfiles.git
 	cd dotfiles
+    ./setup.sh
 	./dots.sh
 
