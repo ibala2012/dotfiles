@@ -1,0 +1,16 @@
+AutoComplPop
+bufexplorer
+ctrlp.vim
+neobundle.vim
+neosnippet-snippets
+neosnippet.vim
+settings
+vim-airline
+vim-airline-themes
+vim-clang-format
+vim-colorschemes
+vim-fugitive
+vim-gitgutter
+vim-python-pep8-indent
+vim-tmux-navigator
+vimshell
